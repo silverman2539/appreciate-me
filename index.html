@@ -1,0 +1,160 @@
+<html>
+	<head>
+		<title>100 Random Things!</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	
+	<body onkeydown="Secret(event)">
+		<div id="secret" style="display:none;">
+			<p>You discovered the secret!</p>
+			<p>See if you can figure out the password!</p>
+			<p>It's a five digit pin!</p>
+			<p>If you figure out the password you can access all the pages without needing to select a random one!</p>
+			
+			<br>
+			<input type="text" id="password">
+			<br><br>
+			<button class="extra" id="enter" onclick="Password()">Enter</button>
+			<br>
+			
+			<p id="incorrect" style="color:crimson; display:none;">Incorrect password! Try again!</p>
+			<p id="correct" style="color:green; display:none;">Great job! Close out and click any number at the top to view that page!</p>
+			<p id="error" style="color:crimson; display:none;">Error! No answer detected.</p>
+			
+			<br>
+			<button class="extra" onclick="Close()">Close</button>
+			<br><br>
+		</div>
+		
+		<div id="words">
+			<p>Press the button and it will take you to a random page!</p>
+			<p>There are 100 different pages it might bring you to!</p>
+			<p>Some of the pages are more likely to show up than other pages!</p>
+			<p>The buttons at the top show which pages you've seen!</p>
+			<p>(the info saves if you leave the page)</p>
+			<p>Have fun my love!</p>
+			<p>I hope you enjoy it!</p>
+			<br>
+		</div>
+		
+		<div id="buttons" style="display:none;">
+			<button disabled class="pages" id="1" onclick="random=1; Choose();">1</button>
+			<button disabled class="pages" id="2" onclick="random=2; Choose();">2</button>
+			<button disabled class="pages" id="3" onclick="random=3; Choose();">3</button>
+			<button disabled class="pages" id="4" onclick="random=4; Choose();">4</button>
+			<button disabled class="pages" id="5" onclick="random=5; Choose();">5</button>
+			<button disabled class="pages" id="6" onclick="random=6; Choose();">6</button>
+			<button disabled class="pages" id="7" onclick="random=7; Choose();">7</button>
+			<button disabled class="pages" id="8" onclick="random=8; Choose();">8</button>
+			<button disabled class="pages" id="9" onclick="random=9; Choose();">9</button>
+			<button disabled class="pages" id="10" onclick="random=10; Choose();">10</button>
+			<br>
+			<button disabled class="pages" id="11" onclick="random=11; Choose();">11</button>
+			<button disabled class="pages" id="12" onclick="random=12; Choose();">12</button>
+			<button disabled class="pages" id="13" onclick="random=13; Choose();">13</button>
+			<button disabled class="pages" id="14" onclick="random=14; Choose();">14</button>
+			<button disabled class="pages" id="15" onclick="random=15; Choose();">15</button>
+			<button disabled class="pages" id="16" onclick="random=16; Choose();">16</button>
+			<button disabled class="pages" id="17" onclick="random=17; Choose();">17</button>
+			<button disabled class="pages" id="18" onclick="random=18; Choose();">18</button>
+			<button disabled class="pages" id="19" onclick="random=19; Choose();">19</button>
+			<button disabled class="pages" id="20" onclick="random=20; Choose();">20</button>
+			<br>
+			<button disabled class="pages" id="21" onclick="random=21; Choose();">21</button>
+			<button disabled class="pages" id="22" onclick="random=23; Choose();">22</button>
+			<button disabled class="pages" id="23" onclick="random=25; Choose();">23</button>
+			<button disabled class="pages" id="24" onclick="random=27; Choose();">24</button>
+			<button disabled class="pages" id="25" onclick="random=29; Choose();">25</button>
+			<button disabled class="pages" id="26" onclick="random=31; Choose();">26</button>
+			<button disabled class="pages" id="27" onclick="random=33; Choose();">27</button>
+			<button disabled class="pages" id="28" onclick="random=35; Choose();">28</button>
+			<button disabled class="pages" id="29" onclick="random=37; Choose();">29</button>
+			<button disabled class="pages" id="30" onclick="random=39; Choose();">30</button>
+			<br>
+			<button disabled class="pages" id="31" onclick="random=41; Choose();">31</button>
+			<button disabled class="pages" id="32" onclick="random=43; Choose();">32</button>
+			<button disabled class="pages" id="33" onclick="random=45; Choose();">33</button>
+			<button disabled class="pages" id="34" onclick="random=47; Choose();">34</button>
+			<button disabled class="pages" id="35" onclick="random=49; Choose();">35</button>
+			<button disabled class="pages" id="36" onclick="random=51; Choose();">36</button>
+			<button disabled class="pages" id="37" onclick="random=53; Choose();">37</button>
+			<button disabled class="pages" id="38" onclick="random=55; Choose();">38</button>
+			<button disabled class="pages" id="39" onclick="random=57; Choose();">39</button>
+			<button disabled class="pages" id="40" onclick="random=59; Choose();">40</button>
+			<br>
+			<button disabled class="pages" id="41" onclick="random=61; Choose();">41</button>
+			<button disabled class="pages" id="42" onclick="random=64; Choose();">42</button>
+			<button disabled class="pages" id="43" onclick="random=67; Choose();">43</button>
+			<button disabled class="pages" id="44" onclick="random=70; Choose();">44</button>
+			<button disabled class="pages" id="45" onclick="random=73; Choose();">45</button>
+			<button disabled class="pages" id="46" onclick="random=76; Choose();">46</button>
+			<button disabled class="pages" id="47" onclick="random=79; Choose();">47</button>
+			<button disabled class="pages" id="48" onclick="random=82; Choose();">48</button>
+			<button disabled class="pages" id="49" onclick="random=85; Choose();">49</button>
+			<button disabled class="pages" id="50" onclick="random=88; Choose();">50</button>
+			<br>
+			<button disabled class="pages" id="51" onclick="random=91; Choose();">51</button>
+			<button disabled class="pages" id="52" onclick="random=94; Choose();">52</button>
+			<button disabled class="pages" id="53" onclick="random=97; Choose();">53</button>
+			<button disabled class="pages" id="54" onclick="random=100; Choose();">54</button>
+			<button disabled class="pages" id="55" onclick="random=103; Choose();">55</button>
+			<button disabled class="pages" id="56" onclick="random=106; Choose();">56</button>
+			<button disabled class="pages" id="57" onclick="random=109; Choose();">57</button>
+			<button disabled class="pages" id="58" onclick="random=112; Choose();">58</button>
+			<button disabled class="pages" id="59" onclick="random=115; Choose();">59</button>
+			<button disabled class="pages" id="60" onclick="random=118; Choose();">60</button>
+			<br>
+			<button disabled class="pages" id="61" onclick="random=121; Choose();">61</button>
+			<button disabled class="pages" id="62" onclick="random=125; Choose();">62</button>
+			<button disabled class="pages" id="63" onclick="random=129; Choose();">63</button>
+			<button disabled class="pages" id="64" onclick="random=133; Choose();">64</button>
+			<button disabled class="pages" id="65" onclick="random=137; Choose();">65</button>
+			<button disabled class="pages" id="66" onclick="random=141; Choose();">66</button>
+			<button disabled class="pages" id="67" onclick="random=145; Choose();">67</button>
+			<button disabled class="pages" id="68" onclick="random=149; Choose();">68</button>
+			<button disabled class="pages" id="69" onclick="random=153; Choose();">69</button>
+			<button disabled class="pages" id="70" onclick="random=157; Choose();">70</button>
+			<br>
+			<button disabled class="pages" id="71" onclick="random=161; Choose();">71</button>
+			<button disabled class="pages" id="72" onclick="random=165; Choose();">72</button>
+			<button disabled class="pages" id="73" onclick="random=169; Choose();">73</button>
+			<button disabled class="pages" id="74" onclick="random=173; Choose();">74</button>
+			<button disabled class="pages" id="75" onclick="random=177; Choose();">75</button>
+			<button disabled class="pages" id="76" onclick="random=181; Choose();">76</button>
+			<button disabled class="pages" id="77" onclick="random=185; Choose();">77</button>
+			<button disabled class="pages" id="78" onclick="random=189; Choose();">78</button>
+			<button disabled class="pages" id="79" onclick="random=193; Choose();">79</button>
+			<button disabled class="pages" id="80" onclick="random=197; Choose();">80</button>
+			<br>
+			<button disabled class="pages" id="81" onclick="random=201; Choose();">81</button>
+			<button disabled class="pages" id="82" onclick="random=206; Choose();">82</button>
+			<button disabled class="pages" id="83" onclick="random=211; Choose();">83</button>
+			<button disabled class="pages" id="84" onclick="random=216; Choose();">84</button>
+			<button disabled class="pages" id="85" onclick="random=221; Choose();">85</button>
+			<button disabled class="pages" id="86" onclick="random=226; Choose();">86</button>
+			<button disabled class="pages" id="87" onclick="random=231; Choose();">87</button>
+			<button disabled class="pages" id="88" onclick="random=236; Choose();">88</button>
+			<button disabled class="pages" id="89" onclick="random=241; Choose();">89</button>
+			<button disabled class="pages" id="90" onclick="random=246; Choose();">90</button>
+			<br>
+			<button disabled class="pages" id="91" onclick="random=251; Choose();">91</button>
+			<button disabled class="pages" id="92" onclick="random=256; Choose();">92</button>
+			<button disabled class="pages" id="93" onclick="random=261; Choose();">93</button>
+			<button disabled class="pages" id="94" onclick="random=266; Choose();">94</button>
+			<button disabled class="pages" id="95" onclick="random=271; Choose();">95</button>
+			<button disabled class="pages" id="96" onclick="random=276; Choose();">96</button>
+			<button disabled class="pages" id="97" onclick="random=281; Choose();">97</button>
+			<button disabled class="pages" id="98" onclick="random=286; Choose();">98</button>
+			<button disabled class="pages" id="99" onclick="random=291; Choose();">99</button>
+			<button disabled class="pages" id="100" onclick="random=296; Choose();">100</button>
+			<br><br>
+		</div>
+		
+		<button id="random" onclick="Random()">Click Here!</button>
+		
+		<br><br><br>
+		<button id="clear" onclick="Clear()">Clear Data</button>
+		
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
