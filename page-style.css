@@ -1,0 +1,123 @@
+body
+{
+	background: linear-gradient(to bottom right, mistyrose 0%, antiquewhite 20%, ivory 40%, honeydew 60%, aliceblue 80%, ghostwhite 100%);
+	color: gray;
+	text-align: center;
+	padding: 25;
+	font-size: 23;
+	border-color: gray;
+	border-style: double;
+}
+
+hr
+{
+	color: darkgray;
+	border-style: solid;
+}
+
+img
+{
+	border-style: solid;
+	border-width: thin;
+}
+.meme
+{
+	width: 250;
+	height: 250;
+}
+.meme:hover
+{
+	width: 500;
+	height: 500;
+	transition: 1s;
+}
+.wide
+{
+	height: 250;
+}
+.tall
+{
+	width: 250;
+}
+.story
+{
+	height: 200;
+	border: none;
+}
+.kid
+{
+	height: 150;
+	border: none;
+}
+.dog
+{
+	height: 100;
+	border: none;
+}
+.people
+{
+	height: 250;
+	border: none;
+}
+
+embed
+{
+	border-style: solid;
+	border-width: thin;
+	width: 325;
+	height: 325;
+}
+
+button
+{
+	background: linear-gradient(to bottom right, mistyrose 0%, antiquewhite 20%, ivory 40%, honeydew 60%, aliceblue 80%, ghostwhite 100%);
+	color: gray;
+	font-size: 20;
+	height: 35;
+	width: 100;
+	border-width: thin;
+	border-color: dimgray;
+}
+button:hover
+{
+	transition: 0.5s;
+	opacity: 75%;
+	color: black;
+	border-color: black;
+}
+.music
+{
+	font-size: 15;
+	height: 25;
+	width: 50;
+}
+.next
+{
+	font-size: 15;
+	height: 25;
+	width: 45;
+}
+.restart
+{
+	font-size: 15;
+	height: 25;
+	width: 60;
+}
+.start
+{
+	width: 60;
+}
+
+div
+{
+	display: inline-block;
+	border-style: dashed;
+	border-width: thin;
+	padding: 25;
+	padding-top: 0;
+}
+.stories
+{
+	padding-top: 25;
+	background-color: white;
+}

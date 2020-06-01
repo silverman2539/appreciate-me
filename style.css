@@ -1,0 +1,99 @@
+body
+{
+	background: linear-gradient(to bottom right, mistyrose 0%, antiquewhite 20%, ivory 40%, honeydew 60%, aliceblue 80%, ghostwhite 100%);
+	color: gray;
+	text-align: center;
+	padding: 25;
+	font-size: 20;
+	border-color: gray;
+	border-style: double;
+}
+
+button
+{
+	background: linear-gradient(to bottom right, mistyrose 0%, antiquewhite 20%, ivory 40%, honeydew 60%, aliceblue 80%, ghostwhite 100%);
+	font-size: 20;
+	border-style: solid;
+	border-color: gray;
+	color: gray;
+}
+
+.pages
+{
+	width: 50;
+	height: 30;
+	opacity: 50%;
+}
+
+#random
+{
+	background: linear-gradient(to bottom right, crimson 0%, coral 20%, #EEDF2F 40%, limegreen 60%, deepskyblue 80%, mediumorchid 100%);
+	width: 200;
+	height: 125;
+	font-size: 30;
+}
+#random:hover
+{
+	transition: 0.5s;
+	opacity: 75%;
+	color: black;
+	border-color: black;
+}
+
+.extra
+{
+	font-size: 15;
+	height: 25;
+	width: 50;
+	border-width: thin;
+	border-color: dimgray;
+}
+.extra:hover
+{
+	transition: 0.5s;
+	opacity: 75%;
+	color: black;
+	border-color: black;
+}
+
+#clear
+{
+	font-size: 15;
+	height: 25;
+	width: 90;
+	border-width: thin;
+	border-color: dimgray;
+}
+#clear:hover
+{
+	transition: 0.5s;
+	opacity: 75%;
+	color: black;
+	border-color: black;
+}
+
+#secret
+{
+	background: linear-gradient(to bottom right, mistyrose 0%, antiquewhite 20%, ivory 40%, honeydew 60%, aliceblue 80%, ghostwhite 100%);
+	border-style: solid;
+	position: fixed;
+	display: inline;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+input
+{
+	background: linear-gradient(to bottom right, mistyrose 0%, antiquewhite 20%, ivory 40%, honeydew 60%, aliceblue 80%, ghostwhite 100%);
+	color: gray;
+	border-color: gray;
+	border-style: solid;
+	border-width: thin;
+	text-align: center;
+	font-size: 15;
+	height: 25;
+	width: 100;
+}
